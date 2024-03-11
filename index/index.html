@@ -14,6 +14,13 @@
     <header>
         <h1> <b> CAT AND DOGS ADAPTIONS</b></h1>
     </header>
+
+    <a href="page1.html" class="page-link">Animal Rights Discussion </a> &nbsp
+    <a href="page2.html" class="page-link">Animal Welfare vs Animal Rights</a> &nbsp
+    <a href="page3.html" class="page-link">Stray Cats and Dogs</a> &nbsp
+    <a href="page4.html" class="page-link">Our Mission and How You Can Help</a> &nbsp
+    <a href="page5.html" class="page-link">Advocacy for Animals | Programs</a>
+
     <nav>
         <h2>Table of Contents</h2>
         <ul>
@@ -40,7 +47,7 @@
                 nature of cats and dogs. Whether they're purring contentedly on our laps or wagging their tails in excitement, these delightful creatures bring immeasurable joy simply by gracing our households and communities with their presence. Join
                 us as we explore the unique bond between humans and animals, sharing heartwarming stories, adorable photos, and valuable insights into the world of our four-legged friends. Together, let's celebrate the magic of cats and dogs and spread
                 love and positivity one paw print at a time. </p>
-            <button onclick="toggleContent('moreIntroduction')">Read More</button>
+
         </section>
 
         </section>
@@ -48,7 +55,7 @@
             <h2>Fun facts about cats and dogs</h2>
             <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspDiscover the entire range of adorable and endearing behaviors exhibited by cats and dogs as we delve into their endearing peculiarities and amusing activities. Come celebrate the amazement and happiness these
                 furry friends bring into our lives, as each new finding deepens our bond with these amazing animals.</p>
-            <button onclick="toggleContent('about cats and dogs')">Read More</button>
+
         </section>
         <table>
             <tr>
@@ -98,7 +105,7 @@
                 though some may still remain outdoors and roam the streets. Sometimes they serve to guard property or control pests but are unlikely to receive veterinary care or concern for their welfare. In other communities, they are disliked, or even
                 feared, and may be kicked, hit or stoned if they come too close. Although cats on the street tend to do better than dogs at fending for themselves, the lives of both species are filled with misery.
             </p>
-            <button onclick="toggleContent('rights')">Read More</button>
+
 
 
         </section>
@@ -164,12 +171,6 @@
                         </p>
                     </section>
 
-                    <a href="page1.html" class="page-link">1</a>
-                    <a href="page2.html" class="page-link">2</a>
-                    <a href="page3.html" class="page-link">3</a>
-                    <a href="page4.html" class="page-link">4</a>
-                    <a href="page5.html" class="page-link">5</a>
-
                     <section id="contact">
                         <h2>Contact Us</h2>
                         <table>
@@ -208,24 +209,23 @@
                 </section>
 
     </main>
-    <script>
-        function toggleContent(sectionId) {
-            var moreContent = document.getElementById(sectionId);
-            if (moreContent.style.display === "none") {
-                moreContent.style.display = "inline";
-            } else {
-                moreContent.style.display = "none";
-            }
-        }
-    </script>
-    <footer>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
 
-        <button style='font-size:10px'>   Donation   <i class='fas fa-donate'></i></button>
+    <footer>
+        <p>For more information or to get involved in animal rights activism, check out reputable organizations in our social media accounts. </p>
+        <a href="https://www.facebook.com/profile.php?id=100006805725188" class="fa fa-facebook"></a>
+        <a href="https://x.com/richard_bilan?s=09" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/itsme_kiezer/" class="fa fa-instagram"></a>
+
+        <button onclick="redirectToDonationPage()">Donate Now</button>
+
 
     </footer>
+    <script>
+        function redirectToDonationPage() {
+            // URL sa donation page
+            window.location.href = "donation_page.html";
+        }
+    </script>
 </body>
 
 </html>

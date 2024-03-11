@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Animal Rights Discussion</title>
 </head>
 
@@ -11,6 +12,14 @@
     <header>
         <h1>Animal Rights: Importance and Arguments</h1>
     </header>
+
+    <a href="index.html" class="page-link">Home</a>
+    <a href="page1.html" class="page-link">Animal Rights Discussion </a> &nbsp
+    <a href="page2.html" class="page-link">Animal Welfare vs Animal Rights</a> &nbsp
+    <a href="page3.html" class="page-link">Stray Cats and Dogs</a> &nbsp
+    <a href="page4.html" class="page-link">Our Mission and How You Can Help</a> &nbsp
+    <a href="page5.html" class="page-link">Advocacy for Animals | Programs</a>
+
 
     <main>
         <section id="importance">
@@ -45,11 +54,25 @@
                 <li>Advocacy for alternatives in research and testing methods</li>
             </ul>
         </section>
+
     </main>
 
     <footer>
-        <p>For more information or to get involved in animal rights activism, check out reputable organizations in your area.</p>
+        <p>For more information or to get involved in animal rights activism, check out reputable organizations in our social media accounts.</p>>
+
+        <a href="https://www.facebook.com/profile.php?id=100006805725188" class="fa fa-facebook"></a>
+        <a href="https://x.com/richard_bilan?s=09" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/itsme_kiezer/" class="fa fa-instagram"></a>
+
+        <button onclick="redirectToDonationPage()">Donate Now</button>
+
     </footer>
+    <script>
+        function redirectToDonationPage() {
+            // URL sa donation page
+            window.location.href = "donation_page.html";
+        }
+    </script>
 </body>
 
 </html>
